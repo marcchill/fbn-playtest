@@ -142,7 +142,7 @@ const Preloader = /** @constructor */ function () { // eslint-disable-line no-un
 			loaded: 0,
 			done: false,
 		};
-		return fetch(file).then(function (response) {
+		return fetch(file + '?v=0.3.1-sweep14').then(function (response) {
 			if (!response.ok) {
 				return Promise.reject(new Error(`Failed loading file '${file}'`));
 			}
